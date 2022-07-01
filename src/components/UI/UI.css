@@ -1,0 +1,25 @@
+.card {
+    padding: 1rem 1rem 1rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(215, 128, 128); 
+
+}
+
+
+.input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  
+.input input {
+    width: 3rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font: inherit;
+    /* padding-left: 0.5rem; */
+  }
