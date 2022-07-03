@@ -1,0 +1,14 @@
+{
+    "m1":{"description":"(Marinara Sauce, Cheese, Gouda)","name":"Double Cheese Pizza","price":159},
+    "m2":{"description":"Marinara Sauce,Mozzarella cheese","name":"Margherita Pizza","price":99},
+    "m3":{"description":"Mozzarela Cheese, Chicken Sausage","name":"Chicken Sausage Pizza","price":179},
+    "m4":{"description":"[served with salan] 1/2 kg contains 4 pcs fresh chicken are marinated in a mixture of freshly ground BBK spices & layered with long grain basmati rice ","name":"Chicken Hyderabadi Dum Biryani ","price":485},
+    "m5":{"description":"[Served with salan] 1 kg Fresh vegetables are marinated in a mixture of freshly ground BBK spices & layered with long grain basmati rice","name":"Veg Hyderabadi Dum Biryani","price":635},
+    "m6":{"description":"[Served with salan] 1/2 Kg contains 4 eggs which is marinated in a mixture of freshly ground BBK spices & layered with long grain basmati rice","name":"Egg Dum Biryani","price":345},
+    "m7":{"description":"A food that looks like a hamburger but that is made with vegetables","name":"Veg Burger","price":80},
+    "m8":{"description":"Chicken cheese burger makes a great combination of carbs, protein, fiber, vitamins and minerals by adding up vegetables. Also the cheese adds in the goodness of calcium.","name":"PFC Chicken Cheese Burger","price":130},
+    "m9":{"description":"Chicken Burger is prepared with a crunchy crispy chicken placed in between the burger buns with amazing sauces and lettuce.","name":"Chicken Burger","price":105}
+  
+         
+
+}

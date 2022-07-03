@@ -8,18 +8,17 @@ export default function MealItem(props) {
 
   const price = `₹ ${props.price.toFixed(2)}`;
 
-  const addCartHandler = (amount) => {
+  const addToCartHandler = (amount) => {
     cartcntxt.addItem({
       id: props.id,
       name: props.name,
       amount: amount,
-      price: props.price
+      price: props.price,
     });
   };
 
-  
   return (
-    <li class="meals">
+    <li className="meal">
       <div>
         <h3>{props.name}</h3>
         <div className="description"> {props.description}</div>
@@ -27,9 +26,8 @@ export default function MealItem(props) {
       </div>
 
       <div>
-        <MealItemForm onAddToCart={addCartHandler} />
+        <MealItemForm onAddToCart={addToCartHandler} />
       </div>
-
     </li>
   );
 }

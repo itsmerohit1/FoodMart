@@ -1,8 +1,8 @@
-import './UI.css'
+import './Card.css'
 
 export const Card =(props)=>{
     return (
-        <div class="card">
+        <div className="card">
         {props.children}
         </div>
     )

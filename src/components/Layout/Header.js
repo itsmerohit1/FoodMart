@@ -11,9 +11,8 @@ export default function Header(props) {
         <Cartbutton onClick={props.onShowCart}></Cartbutton>
       </header>
 
-      <div class="main-image">
-        <img src={food} alt="khana khazana"></img>
-      </div>
+   
+      
     </Fragment>
   );
 }

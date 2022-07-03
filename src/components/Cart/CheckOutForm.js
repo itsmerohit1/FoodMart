@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-// import './CheckOutForm.css';
+import './CheckOutForm.css';
 
 const isEmpty = (value) => value.trim() === '';
 const isSixChars = (value) => value.trim().length === 6;

@@ -1,5 +1,7 @@
 .form {
     text-align: right;
+    justify-content: space-between;
+    /* display:flex; */
   }
   
   .form button {

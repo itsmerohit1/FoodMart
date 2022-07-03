@@ -1,13 +1,53 @@
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 20;
-    background-color: rgba(0, 0, 0, 0.75);
+
+
+.backdrop{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(113, 41, 41, 0.8);
+}
+
+.modal{
+
+
+  position:fixed;
+  top:15vh;
+  left :5%;
+  width:90%;
+  z-index: 2;
+  background-color: white;
+  padding: 1rem;
+  border-radius:14px;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+.content{
+
+  background-color: rgb(151, 45, 148);
+}
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
   }
-  
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+ 
+  /*
   .modal {
     position: fixed;
     top: 15vh;
@@ -37,4 +77,4 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
+  } */

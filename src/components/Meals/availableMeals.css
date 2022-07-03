@@ -1,19 +1,36 @@
 .meals {
-    max-width: 60rem;
-    width: 90%;
-    margin: 2rem auto;
-    /* animation: meals-appear 1s ease-out forwards; */
-    background-color: rgb(34, 127, 127);
+    /* max-width: 60rem; */
+    
+    width:100%;
+    height: 100%;
+    margin: 2rem ;
+    animation: meals-appear 1s ease-out forwards;
+    background-color: rgba(84, 226, 226, 0.8);
+    display: flex;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 1rem red;
+    justify-content: space-between;
+    /* border: 1rem rgb(148, 53, 53); */
   
-
+    
+    
   }
 
-  
-  
-  .meals ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .x{
+    display: flex;
+    /* background-color: aliceblue; */
+    /* margin: 2rem; */
+    
+    /* height: 30rem; */
+  justify-content: space-around;
+   margin-left: 7rem;
+   margin-right: 7rem;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+
   }
+  
+   
   
   

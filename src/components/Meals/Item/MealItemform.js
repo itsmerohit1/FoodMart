@@ -1,22 +1,24 @@
 import { useRef, useState } from "react";
 import Input from "../../UI/input";
 import './MealItemForm.css';
-export default function MealItemForm(props) {
+
+
+ const MealItemForm = (props)=> {
   const [amountisValid, setAmountIsValid] = useState(true);
 
   const amountInputRef = useRef();
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    const enteredAmount = amountInputRef.current.defaultvalue;
+  const submitHandler = (event) => {
+    event.preventDefault();
+    const enteredAmount = amountInputRef.current.defaultValue;
     const enteredAmountNumber = +enteredAmount;
 
-    if (enteredAmountNumber.trim().length === 0 || enteredAmountNumber < 1) {
-      setAmountIsValid(0);
+    if (enteredAmount.trim().length === 0 || enteredAmountNumber < 1) {
+      setAmountIsValid(false);
       return;
     }
-    props.onAddtoCart(enteredAmountNumber);
-  };
+    props.onAddToCart(enteredAmountNumber);
+  }
  
   return (
     <form className="form" onSubmit={submitHandler}>
@@ -28,7 +30,7 @@ export default function MealItemForm(props) {
           type: 'number',
           min: '1',
           step: '1',
-          defaultvalue: '1',
+          defaultValue: '1'
         }}
       />
       <button> +Add </button>
@@ -36,3 +38,4 @@ export default function MealItemForm(props) {
     </form>
   );
 }
+export default MealItemForm;

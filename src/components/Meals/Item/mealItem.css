@@ -1,50 +1,34 @@
-.meals{
-
-    color: rgb(29, 183, 29);
-    justify-content: space-between;
+.meal {
     display: flex;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #ccc;
-
-}
-
-.meals h3{
+    justify-content: space-around;
+    margin: 1rem;
+   
+    /* padding-bottom: 100rem; */
+    /* border-bottom: 1px solid #ccc; */
+    width:100%;
+    height:90%;
+    background-color: rgb(86, 234, 234,0);
+    /* padding: 1rem; */
+  /* border-radius: 20rem; */
+  /* margin-bottom: 2rem; */
+  border-radius: 20px;
+  }
+  
+  .meal h3 {
     margin: 0 0 0.25rem 0;
-}
-
-.description{
+  }
+  
+  .description {
     font-style: italic;
-}
-.price{
+  }
+  
+  .price {
     margin-top: 0.25rem;
     font-weight: bold;
-    color: rgb(195, 75, 23);
+    color: #633308;
     font-size: 1.25rem;
-}
-.form{
-    text-align: right;
-}
-.form button{
-    background-color: #8a2b06;
-    font: inherit;
-    border: 1px solid #8a2b06;
-    color: white;
-    border-radius: 20px;
-    /* padding: 0.25rem 1rem 0.25rem 1rem; */
-    padding : 0.25rem 2rem;
-    /*
-    cursor: pointer;
- 
+    display: right;
+  }
    
-   
-   
-   
-    font-weight: bold; */
-}
 
 
-.form button:hover,
-.form button:active {
-  background-color: #641e03;
-  border-color: #641e03;
-}

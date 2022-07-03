@@ -4,7 +4,7 @@ import Header from './components/Layout/Header';
 import Meals from './components/Meals/Meals';
 import CartProvider from './store/CartProvider';
 // import AvailableMeals from './components/Meals/AvailableMeals';
-
+import './App.css';
 function App() {
   const [showCart, setShowCart] = useState(false);
   
@@ -16,7 +16,7 @@ function App() {
     setShowCart(false);
   }
   return (
-    <CartProvider>
+    <CartProvider >
       {showCart && <Cart onClose= {hideCartHandler} />}
       <Header onShowCart = {showCartHandler}/>
       <main>

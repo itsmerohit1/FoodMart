@@ -2,22 +2,21 @@ import { useState, useEffect } from "react";
 import "./availableMeals.css";
 import { Card } from "../UI/Card";
 import MealItem from "./Item/Mealtem";
+import menu from "./test.json";
 
 function AvailableMeals(props) {
-
   const [meals, setMeals] = useState([]);
-  const [isLoading, setisLoading] = useState(1);
+  const [isLoading, setIsLoading] = useState(true);
   const [httpError, setHttpError] = useState();
 
   useEffect(() => {
     const fetchMeals = async () => {
-      const response = await fetch('https://food-order-40bae-default-rtdb.asia-southeast1.firebasedatabase.app/meals.json');
+      // if (!response.ok) {
+      //   throw new Error("Something went wrong");
+      // }
 
-      if (!response.ok) {
-        throw new Error("Something went wrong");
-      }
-
-      const responseData = await response.json();
+      // const responseData = await response.json();
+      const responseData = menu;
 
       const loadedMeals = [];
 
@@ -26,16 +25,16 @@ function AvailableMeals(props) {
           id: key,
           name: responseData[key].name,
           description: responseData[key].description,
-          price: responseData[key].price
+          price: responseData[key].price,
         });
       }
-      
-      setisLoading(false);
+
+      setIsLoading(false);
       setMeals(loadedMeals);
-    }
+    };
 
     fetchMeals().catch((error) => {
-      setisLoading(false);
+      setIsLoading(false);
       setHttpError(error.message);
     });
   }, []);
@@ -67,11 +66,23 @@ function AvailableMeals(props) {
   ));
 
   return (
-    <section class="meals">
-      <Card>
-        <ul> {mealsList}</ul>
-      </Card>
-    </section>
+    <div className="">
+      <div className="x">
+        <Card> {mealsList[0]}</Card>
+        <Card> {mealsList[1]}</Card>
+        <Card> {mealsList[2]}</Card>
+      </div>
+      <div className="x">
+      <Card> {mealsList[3]}</Card>
+      <Card> {mealsList[4]}</Card>
+      <Card> {mealsList[5]}</Card>
+      </div>
+      <div className="x">
+      <Card> {mealsList[6]}</Card>
+      <Card> {mealsList[7]}</Card>
+      <Card> {mealsList[8]}</Card>
+      </div>
+    </div>
   );
 }
 

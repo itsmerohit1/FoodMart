@@ -1,6 +1,26 @@
+ 
 .card {
-    padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 14px;
-    background-color: white;
-  }
+  /* padding: 1rem; */
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); */
+  /* border-radius: 14px; */
+  /* background-color: rgb(188, 84, 84); */
+  display: flex;  
+  /* margin: 1rem; */
+ width: 30%;
+/* transition: tranform 5s; */
+ /* height: 10%;  */
+ background-color: rgba(61, 225, 211, 0.7);
+ border-radius: 2rem;
+  margin :2rem;
+  border-color: brown;
+  /* padding: 2rem; */
+  /* padding-right: 3rem; */
+
+}
+
+.card :hover{
+  
+  background-color: rgb(63, 212, 200);
+  /* transform: scale(1.1); */
+}
+
