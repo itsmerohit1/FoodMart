@@ -29,7 +29,7 @@ export const CheckoutForm = (props) => {
 
     const eNameIsValid = !isEmpty(eName);
     const eStreetIsValid = !isEmpty(eStreet);
-    const ePincodeIsValid = !isSixChars(ePincode);
+    const ePincodeIsValid = isSixChars(ePincode);
     const eCityIsValid = !isEmpty(eCity);
 
     setformInputsValidity({
@@ -55,28 +55,31 @@ export const CheckoutForm = (props) => {
 
   return (
     <form className="form" onSubmit={confirmHandler}>
-      <div className="nameClass">
-        <label htmlFor='name'> Your Name </label>
+      <div    >
+        <label htmlFor='name'> Your Name   </label>
         <input type='text' id='name' ref={nameInputRef} />
         {!formInputsValidity.name && <p> Please enter a valid name</p>}
       </div>
-      <div className="streetClass">
+
+      <div   >
         <label htmlFor='street'> Street</label>
         <input type='text' id='street' ref={streetInputRef} />
         {!formInputsValidity.street && <p> Please enter a valid street</p>}
       </div>
-      <div className="pincodeClass">
+      
+      <div  >
         <label htmlFor='pincode'> Your Pincode </label>
         <input type='text' id='pincode' ref={pincodeInputRef} />
         {!formInputsValidity.pincode && <p> Please enter a valid pincode</p>}
       </div>
-      <div className="cityClass">
+
+      <div   >
         <label htmlFor='city'> City </label>
         <input type='text' id="city" ref={cityInputRef} />
         {!formInputsValidity.city && <p> Please enter a valid name</p>}
       </div>
 
-      <div className="actions">
+      <div   >
         <button type='button' onClick={props.onClose}>
           Cancel
         </button>

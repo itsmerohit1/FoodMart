@@ -7,7 +7,7 @@ export default function Header(props) {
   return (
     <Fragment>
       <header class="header">
-        <h1>Zomato</h1>
+        <h1>Food Plaza</h1>
         <Cartbutton onClick={props.onShowCart}></Cartbutton>
       </header>
 

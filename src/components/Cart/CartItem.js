@@ -1,4 +1,4 @@
-// import './CartItem.css';
+import './CartItem.css';
 
  const CartItem = (props) => {
   const price = `₹${props.price.toFixed(2)}`;
@@ -7,7 +7,7 @@
     <li className="cart-item">
       <div>
         <h2>{props.name}</h2>
-        <div className="">
+        <div className="price">
           <span className="">{price}</span>
           <span className="">{props.amount}</span>
         </div>

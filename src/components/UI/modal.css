@@ -27,7 +27,7 @@
 
 .content{
 
-  background-color: rgb(151, 45, 148);
+  background-color: rgba(133, 221, 159, 0.5);
 }
 @media (min-width: 768px) {
   .modal {

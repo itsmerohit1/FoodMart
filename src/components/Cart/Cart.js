@@ -3,7 +3,7 @@ import Modal from "../UI/modal";
 import CartContext from "../../store/cart-context";
 import { CheckoutForm } from "./CheckOutForm";
 import {CartItem} from './CartItem.js';
-// import './Cart.css';
+import './Cart.css';
 
 function Cart(props){
   const [showCheckout, setshowCheckout] = useState(false);
@@ -44,16 +44,16 @@ function Cart(props){
 
   const submitOrderHandler = (userData) => {
     setisSubmitting(true);
-    fetch(
-      "https://food-order-40bae-default-rtdb.asia-southeast1.firebasedatabase.app/orders.json",
-      {
-        method: 'POST',
-        body: JSON.stringify({
-          user: userData,
-          orderedItems: cartCntxt.items,
-        }),
-      }
-    );
+    // fetch(
+    //   "https://food-order-40bae-default-rtdb.asia-southeast1.firebasedatabase.app/orders.json",
+    //   {
+    //     method: 'POST',
+    //     body: JSON.stringify({
+    //       user: userData,
+    //       orderedItems: cartCntxt.items,
+    //     }),
+    //   }
+    // );
     setisSubmitting(false);
     setDidSubmit(true);
     cartCntxt.clearCart();
